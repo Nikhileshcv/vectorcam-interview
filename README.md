@@ -1,11 +1,15 @@
-Project Structure
+# Interview Review & Annotation Dashboard
+
+## Project Structure
+
+```txt
 src/interview/
-├── components/ # UI components (container + presentational)
-├── context/ # Shared application state and actions
-├── hooks/ # Derived state and reusable logic
-├── services/ # API access (service / repository layer)
-├── types/ # Shared domain types
-└── utils/ # Stateless helper utilities
+├── components/     # UI components (container + presentational)
+├── context/        # Shared application state and actions
+├── hooks/          # Derived state and reusable logic
+├── services/       # API access (service / repository layer)
+├── types/          # Shared domain types
+└── utils/          # Stateless helper utilities
 
 The interview module is organized as a self-contained feature, making responsibilities clear and the codebase easy to navigate.
 
