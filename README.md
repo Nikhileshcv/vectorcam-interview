@@ -2,7 +2,6 @@
 
 ## Project Structure
 
-```txt
 src/interview/
 ├── components/     # UI components (container + presentational)
 ├── context/        # Shared application state and actions
