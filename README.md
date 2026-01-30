@@ -13,7 +13,7 @@ src/interview/
 
 The interview module is organized as a self-contained feature, making responsibilities clear and the codebase easy to navigate.
 
-1. Responsibility Boundaries
+# 1. Responsibility Boundaries
 Context
 
 Owns shared, long-lived application state
@@ -62,7 +62,7 @@ Validation and formatting helpers
 
 Utilities are intentionally kept minimal to avoid over-engineering.
 
-2. State, Derived State, and Side-Effects
+# 2. State, Derived State, and Side-Effects
 Before Refactoring
 
 Context mixed state, API side-effects, and derived logic
@@ -83,7 +83,7 @@ Dialog state is reset via key-based remounting instead of effects
 
 This separation makes data flow predictable and avoids cascading renders.
 
-3. Design Patterns Applied
+# 3. Design Patterns Applied
 Service / Repository Pattern
 
 API access moved to records.service.ts
@@ -104,7 +104,7 @@ Filtering and summary logic moved out of components
 
 Improves reuse and keeps components simple
 
-4. Feature-Based Folder Structure
+# 4. Feature-Based Folder Structure
 
 All interview-related code lives under a single feature directory:
 
@@ -118,7 +118,7 @@ src/interview/
 
 This keeps the module self-contained and easy to reason about during reviews or interviews.
 
-Phase 2 – Extend & Design
+## Phase 2 – Extend & Design
 Overview
 
 Phase 2 extends the review workflow with validated status updates, filtering, summary counts, history tracking, and optional pagination and concurrency handling.
